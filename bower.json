@@ -1,0 +1,24 @@
+{
+  "name": "projecttemplate",
+  "version": "0.0.0",
+  "authors": [
+    "Jan Pilgenröder <pille@mac.com>"
+  ],
+  "description": "Template for new Pages",
+  "main": "index.html",
+  "keywords": [
+    "template"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}
