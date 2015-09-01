@@ -4,21 +4,20 @@ html
     title Template
     
     //jQuery:
-    link( type='text/javascript', src='http://code.jquery.com/jquery-2.1.4.min.js')
+    script(type='text/javascript', src='lib/jquery.js')
 
     //bootstrap:
-    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous")
-    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous")
+    link(rel='stylesheet', type='text/css', href='lib/bootstrap.css')
+    link(rel='stylesheet', type='text/css', href='lib/bootstrap-theme.css')
     
     //my stuff:
     link(rel='stylesheet', type='text/css', href='css/main.css')
-    link( type='text/javascript', src='js/index.js')
+    script(type='text/javascript', src='js/index.js')
 
   body
     h1 Test Page
     .container
       p.
-        This is a simple template I use to check my setup.
+        This is a simple template I use to check my setup. Does it work?
 
       #console.screen.
-        This is a test

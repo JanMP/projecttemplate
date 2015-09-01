@@ -3,7 +3,8 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     jade = require('gulp-jade'),
     stylus = require('gulp-stylus'),
-    connect = require('gulp-connect');
+    connect = require('gulp-connect'),
+    bowerFiles = require('main-bower-files');
 
 var coffeeSrc = ['./src/coffeescript/*.coffee'],
     jadeSrc = ['./src/jade/*.jade'],
@@ -39,6 +40,11 @@ gulp.task('watch', function() {
   gulp.watch(jadeSrc, ['jade']);
   gulp.watch(stylusSrc, ['stylus']);
   gulp.watch(htmlSrc, ['html']);
+});
+
+gulp.task('bower', function() {
+  return gulp.src(bowerFiles(), {base: './bower_components'})
+  .pipe(gulp.dest('./dest/'));
 });
 
 gulp.task('connect', function() {
